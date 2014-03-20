@@ -110,10 +110,10 @@ int main(int argc, char **argv)
 
 	try {
 		sick_lms.Initialize();
+//		sick_lms.SetSickScanFreqAndRes(SickLMS5xx::SICK_LMS_5XX_SCAN_FREQ_25,
+//		                                       SickLMS5xx::SICK_LMS_5XX_SCAN_RES_17);
 		sick_lms.SetSickScanFreqAndRes(SickLMS5xx::SICK_LMS_5XX_SCAN_FREQ_25,
-		                                       SickLMS5xx::SICK_LMS_5XX_SCAN_RES_17);
-		/*sick_lms.SetSickScanFreqAndRes(SickLMS5xx::SICK_LMS_5XX_SCAN_FREQ_25,
-		                               SickLMS5xx::SICK_LMS_5XX_SCAN_RES_25);*/
+		                               SickLMS5xx::SICK_LMS_5XX_SCAN_RES_25);
 		//sick_lms.SetSickEchoFilter(SickLMS5xx::SICK_LMS_5XX_ECHO_FILTER_ALL_ECHOES);
 		sick_lms.SetSickEchoFilter(SickLMS5xx::SICK_LMS_5XX_ECHO_FILTER_FIRST);
 
