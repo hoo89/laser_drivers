@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Author: Brian Gerkey, Morgan Quigley
+# License: BSD
+
 NAME="download_checkmd5.py"
 
 import urllib, hashlib, os, sys
