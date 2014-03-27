@@ -1,13 +1,6 @@
-# How to build
-$ export CC=gcc-4.4 && export CXX=g++-4.4
-(gcc-4.4がインストールされていることを確認してください)
-$ rosmake sicktoolbox_wrapper2
+laser_drivers
+=============
 
-# How to use with LMS511
-roscoreが動いている状態で
-$ rosrun sicktoolbox_wrapper2 sicklms_5xx
-と打てば、あとはトピック/scanにレーザースキャナからのスキャンデータが入ります。
+A fork of the laser_drivers at https://github.com/rhuitl/laser_drivers
+I tested it works with LMS511 and ROS hydro.
 
-スキャナのIPアドレスはドライバ中で決め打ちされているため、
-オプションで指定するにはドライバを少しだけ修正する必要があります。
- - laser_drivers/sicktoolbox_wrapper2/ros/sicklms/*.cpp
